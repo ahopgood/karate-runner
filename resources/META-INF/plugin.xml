@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.hopgood.alexander</id>
+  <name>Karate Runner</name>
+  <category>Test Tools</category>
+  <version>0.1</version>
+  <vendor email="alex.hopgood+support@gmail.com" url="http://www.alexanderhopgood.com">Alex Corp</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+<!--  <depends>gherkin</depends>-->
+  <depends>JUnit</depends>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+    <configurationType implementation="com.hopgood.alexander.intellij.plugins.karate.KarateRunConfigurationType" />
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
